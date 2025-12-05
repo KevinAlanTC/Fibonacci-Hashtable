@@ -13,7 +13,7 @@ public class Main implements Runnable {
     long fi;
     int num;
 
-    // 🔹 Mejora: Hashtable compartida para guardar resultados ya calculados
+    // Mejora: Hashtable compartida para guardar resultados ya calculados
     static Hashtable<Long, Long> memo = new Hashtable<>();
 
     public Main(int n, long f) {
@@ -32,7 +32,7 @@ public class Main implements Runnable {
     }
 
     long fibonacci(long f) {
-        // 🔹 Mejora: si ya está calculado, lo devolvemos directamente
+        // Mejora: si ya está calculado, lo devolvemos directamente
         if (memo.containsKey(f)) {
             return memo.get(f);
         }
