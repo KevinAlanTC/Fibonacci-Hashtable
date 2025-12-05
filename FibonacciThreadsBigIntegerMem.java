@@ -15,7 +15,7 @@ public class FibonacciThreadsBigIntegerMem implements Runnable {
     BigInteger fi;
     int num;
 
-    // 🔹 Hashtable compartida para guardar resultados ya calculados
+    // Hashtable compartida para guardar resultados ya calculados
     static Hashtable<BigInteger, BigInteger> memo = new Hashtable<>();
 
     public FibonacciThreadsBigIntegerMem(int n, BigInteger f) {
